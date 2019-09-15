@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="site_title_wrap">
+    {%- unless page.home -%}
+    <a href="/" class="back"><span aria-hidden="true">&lt;</span> Zurück</a> {%-
+    endunless -%} {%- if page.home -%}
+    <h1 class="site_title">{{ site.title }}</h1>
+    {%- else -%}
+    <div class="site_title">{{ site.title }}</div>
+    {%- endif -%} {%- unless page.home -%}
+    <div class="aligner"></div>
+    {%- endunless -%}
+  </div>
+  {%- if page.home -%} {%- if site.subtitle -%}
+  <h2 class="site_subtitle">{{ site.subtitle }}</h2>
+  {%- endif -%} {%- include main_nav.html -%} {%- endif -%}
+</header>

@@ -1,0 +1,135 @@
+@import 'vars';
+
+body {
+  font-weight: $fontLight;
+  font-family: $fontText;
+  background-color: $warmWhite;
+  color: $warmBlack;
+
+  &.teal {
+    --accent-color: #{$teal};
+    --accent-color-darked: #{darken($teal, 10%)};
+  }
+  &.green {
+    --accent-color: #{$green};
+    --accent-color-darked: #{darken($green, 10%)};
+  }
+  &.red {
+    --accent-color: #{$red};
+    --accent-color-darked: #{darken($red, 10%)};
+  }
+  &.orange {
+    --accent-color: #{$orange};
+    --accent-color-darked: #{darken($orange, 10%)};
+  }
+  &.yellow {
+    --accent-color: #{$yellow};
+    --accent-color-darked: #{darken($yellow, 10%)};
+  }
+  &.gray {
+    --accent-color: #{$warmGray};
+    --accent-color-darked: #{darken($warmGray, 10%)};
+  }
+}
+
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+.highlight {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem 0 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontHeadline;
+  font-weight: $fontRegular;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: table;
+  position: relative;
+  &::after {
+    content: '';
+    height: 0.2em;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $blue;
+    background-color: var(--accent-color, $blue);
+  }
+}
+
+table tr:nth-child(even),
+code,
+.highlighter-rouge .highlight {
+  background-color: $warmWhite2;
+}
+
+table th {
+  background-color: darken($warmWhite2, 2%);
+}
+
+a {
+  font-weight: $fontBold;
+  color: $blue;
+  color: var(--accent-color, $blue);
+  &:hover,
+  &:active,
+  &:focus {
+    color: black;
+  }
+  &:visited {
+    color: var(--accent-color-darked, darken($blue, 10%));
+  }
+}
+
+hr {
+  opacity: 0.8;
+  border: 0.1em solid var(--accent-color, $blue);
+  margin: 1rem;
+}

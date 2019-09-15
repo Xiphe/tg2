@@ -1,0 +1,68 @@
+.site-header {
+  font-family: $fontHeadline;
+  font-weight: $fontRegular;
+  border: 0;
+}
+
+.site_title_wrap {
+  font-size: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .aligner {
+    display: none;
+  }
+
+  .back,
+  .aligner,
+  .site_title {
+    flex: 1;
+  }
+
+  .back,
+  .aligner {
+    flex-grow: 2;
+    padding: 1em;
+    font-size: 1.2em;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $bigPhone) {
+    font-size: 0.85rem;
+    .aligner {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 1rem;
+  }
+}
+
+.site_title {
+  white-space: nowrap;
+}
+
+.site_title,
+.site_subtitle {
+  line-height: 1em;
+  display: block;
+  font-size: 2em;
+  margin: 0.5em 0 0.25em;
+  padding: 0;
+  text-align: center;
+  &::after {
+    display: none;
+  }
+}
+
+h1.site_title {
+  font-size: 2.5em;
+}
+
+.site_subtitle {
+  font-size: 1em;
+  margin: 0 0 1.5em;
+}

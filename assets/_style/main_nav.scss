@@ -1,0 +1,110 @@
+.main_nav {
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  li {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 50vw;
+  }
+
+  a {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: luminosity;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $warmWhite;
+    &:hover,
+    &:active,
+    &:focus {
+      background-blend-mode: unset;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2.5vw;
+    height: 10vw;
+    font-size: 5vw;
+    line-height: 10vw;
+  }
+
+  .babies {
+    a {
+      background-image: url('/assets/images/babies.jpg');
+      background-color: $teal;
+    }
+
+    span {
+      background-color: rgba($teal, 0.8);
+    }
+  }
+
+  .schwangere {
+    a {
+      background-image: url('/assets/images/schwangere.jpg');
+      background-color: $red;
+    }
+
+    span {
+      background-color: rgba($red, 0.8);
+    }
+  }
+
+  .berufstaetige {
+    a {
+      background-image: url('/assets/images/berufstaetige.jpg');
+      background-color: $green;
+    }
+
+    span {
+      background-color: rgba($green, 0.8);
+    }
+  }
+
+  .fiftyplus {
+    a {
+      background-image: url('/assets/images/50plus.jpg');
+      background-color: $orange;
+    }
+
+    span {
+      background-color: rgba($orange, 0.8);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    li {
+      width: 25%;
+      height: 25vw;
+    }
+
+    span {
+      padding: 0 1.25vw;
+      height: 5vw;
+      font-size: 2.5vw;
+      line-height: 5vw;
+    }
+  }
+}
