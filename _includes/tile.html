@@ -1,0 +1,15 @@
+<div class="tile">
+  <div
+    class="tile-image"
+    style="background-image: url('{{ include.image }}')"
+  ></div>
+  <div class="tile-content">
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.text }}</p>
+    {% capture buttonCta %}
+    {{- include.cta | default: 'Mehr
+    Infos' -}}
+    {% endcapture %} {% include button.html light=true href=include.href
+    cta=buttonCta %}
+  </div>
+</div>

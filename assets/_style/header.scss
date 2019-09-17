@@ -2,6 +2,15 @@
   font-family: $fontHeadline;
   font-weight: $fontRegular;
   border: 0;
+
+  &-wrap {
+    background: rgba($warmWhite, 0.5);
+    background: linear-gradient(
+      180deg,
+      rgba($warmWhite, 0.7) 0%,
+      transparent 100%
+    );
+  }
 }
 
 .site_title_wrap {
@@ -27,6 +36,10 @@
     padding: 1em;
     font-size: 1.2em;
     white-space: nowrap;
+  }
+
+  .back {
+    text-shadow: 0 0 20px $warmWhite;
   }
 
   @media (min-width: $bigPhone) {
@@ -64,5 +77,6 @@ h1.site_title {
 
 .site_subtitle {
   font-size: 1em;
-  margin: 0 0 1.5em;
+  margin: 0;
+  padding-bottom: 1.5em;
 }

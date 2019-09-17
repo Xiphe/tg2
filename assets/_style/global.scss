@@ -5,30 +5,40 @@ body {
   font-family: $fontText;
   background-color: $warmWhite;
   color: $warmBlack;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/assets/images/empfang.png');
 
   &.teal {
     --accent-color: #{$teal};
     --accent-color-darked: #{darken($teal, 10%)};
+    --secondary-color: #{$teal};
+    --secondary-color-darked: #{darken($teal, 10%)};
   }
   &.green {
     --accent-color: #{$green};
     --accent-color-darked: #{darken($green, 10%)};
+    --secondary-color: #{$green};
+    --secondary-color-darked: #{darken($green, 10%)};
   }
   &.red {
     --accent-color: #{$red};
     --accent-color-darked: #{darken($red, 10%)};
+    --secondary-color: #{$red};
+    --secondary-color-darked: #{darken($red, 10%)};
   }
   &.orange {
     --accent-color: #{$orange};
     --accent-color-darked: #{darken($orange, 10%)};
+    --secondary-color: #{$orange};
+    --secondary-color-darked: #{darken($orange, 10%)};
   }
   &.yellow {
     --accent-color: #{$yellow};
     --accent-color-darked: #{darken($yellow, 10%)};
-  }
-  &.gray {
-    --accent-color: #{$warmGray};
-    --accent-color-darked: #{darken($warmGray, 10%)};
+    --secondary-color: #{$yellow};
+    --secondary-color-darked: #{darken($yellow, 10%)};
   }
 }
 
@@ -94,13 +104,13 @@ h6 {
   &::after {
     content: '';
     height: 0.2em;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -0.1em;
     left: 0;
     right: 0;
-    background-color: $blue;
-    background-color: var(--accent-color, $blue);
+    background-color: $defaultSecondaryColor;
+    background-color: var(--secondary-color, $defaultSecondaryColor);
   }
 }
 
@@ -116,20 +126,37 @@ table th {
 
 a {
   font-weight: $fontBold;
-  color: $blue;
-  color: var(--accent-color, $blue);
+  color: $defaultAccentColor;
+  color: var(--accent-color, $defaultAccentColor);
   &:hover,
   &:active,
   &:focus {
     color: black;
   }
   &:visited {
-    color: var(--accent-color-darked, darken($blue, 10%));
+    color: var(--accent-color-darked, darken($defaultAccentColor, 10%));
   }
 }
 
 hr {
   opacity: 0.8;
-  border: 0.1em solid var(--accent-color, $blue);
+  border: 0.1em solid var(--accent-color, $defaultAccentColor);
   margin: 1rem;
+}
+
+main.page-content {
+  max-width: $bigTablet;
+  background: $warmWhite;
+  padding: 0;
+  margin: 2rem auto;
+
+  @media (min-width: #{$bigTablet + $scrollBar}) {
+    border-radius: $borderRadius;
+  }
+}
+
+.wrapper {
+  width: auto;
+  max-width: calc(#{$bigTablet} - 6rem);
+  padding: 2rem 3rem;
 }

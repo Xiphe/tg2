@@ -1,21 +1,16 @@
+@import 'vars';
+
 .main_nav {
   width: 100%;
+  max-width: $bigScreen;
+  margin: 0 auto;
 
   ul {
     list-style: none;
     margin: 0;
-
-    &::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
   }
 
   li {
-    float: left;
-    display: block;
-    width: 50%;
     height: 50vw;
   }
 
@@ -28,6 +23,7 @@
     width: 100%;
     height: 100%;
     color: $warmWhite;
+    font-weight: $fontRegular;
     &:hover,
     &:active,
     &:focus {
@@ -96,7 +92,6 @@
 
   @media (min-width: $tablet) {
     li {
-      width: 25%;
       height: 25vw;
     }
 
@@ -105,6 +100,14 @@
       height: 5vw;
       font-size: 2.5vw;
       line-height: 5vw;
+    }
+  }
+
+  @media (min-width: #{$bigScreen + $scrollBar }) {
+    overflow: hidden;
+    border-radius: $borderRadius;
+    .col {
+      height: $bigScreen / 4;
     }
   }
 }

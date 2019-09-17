@@ -1,0 +1,4 @@
+{%- assign cls = "button" -%}{%- if include.light -%}{%- assign cls = cls |
+append: " button-light" -%}{%- endif -%}
+
+<a class="{{ cls }}" href="{{ include.href }}">{{ include.cta }}</a>
