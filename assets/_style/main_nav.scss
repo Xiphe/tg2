@@ -1,5 +1,9 @@
+@import 'vars';
+
 .main_nav {
   width: 100%;
+  max-width: $bigScreen;
+  margin: 0 auto;
 
   ul {
     list-style: none;
@@ -19,6 +23,7 @@
     width: 100%;
     height: 100%;
     color: $warmWhite;
+    font-weight: $fontRegular;
     &:hover,
     &:active,
     &:focus {
@@ -95,6 +100,14 @@
       height: 5vw;
       font-size: 2.5vw;
       line-height: 5vw;
+    }
+  }
+
+  @media (min-width: $bigScreen) {
+    overflow: hidden;
+    border-radius: $borderRadius;
+    .col {
+      height: $bigScreen / 4;
     }
   }
 }

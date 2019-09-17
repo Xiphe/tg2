@@ -5,6 +5,10 @@ body {
   font-family: $fontText;
   background-color: $warmWhite;
   color: $warmBlack;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/assets/images/empfang.png');
 
   &.teal {
     --accent-color: #{$teal};
@@ -138,4 +142,14 @@ hr {
   opacity: 0.8;
   border: 0.1em solid var(--accent-color, $defaultAccentColor);
   margin: 1rem;
+}
+
+.wrapper {
+  max-width: $bigTablet;
+  background: $warmWhite;
+  padding: 2em;
+
+  @media (min-width: $bigTablet) {
+    border-radius: $borderRadius;
+  }
 }
