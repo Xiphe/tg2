@@ -1,0 +1,40 @@
+@import './vars.scss';
+
+.button {
+  background-color: $defaultAccentColor;
+  background-color: var(--accent-color, $defaultAccentColor);
+  border-radius: 4px;
+  color: $warmWhite;
+  text-decoration: none;
+  height: 56px;
+  padding: 0 36px;
+  margin: 10px 20px 10px 0;
+  display: inline-flex;
+  font-size: inherit;
+  align-items: center;
+  font-weight: bold;
+
+  justify-content: center;
+
+  @media (max-width: 520px) {
+    font-weight: 500;
+    padding: 0 28px;
+    height: 42px;
+  }
+
+  &:focus,
+  &:hover {
+    color: $warmWhite;
+    outline: none;
+    background-color: darken($defaultAccentColor, 10%);
+    background-color: var(
+      --accent-color-darked,
+      darken($defaultAccentColor, 10%)
+    );
+  }
+
+  &.button-light {
+    background: transparent;
+    box-shadow: 0 0 0px 2px inset $warmWhite;
+  }
+}

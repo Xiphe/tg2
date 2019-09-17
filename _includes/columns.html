@@ -1,0 +1,28 @@
+{%- assign cols = 1 -%} {%- if include.col2-%} {%- assign cols = 2 -%} {%- endif
+-%} {%- if include.col3-%} {%- assign cols = 3 -%} {%- endif -%} {%- if
+include.col4-%} {%- assign cols = 4 -%} {%- endif -%}
+
+<div
+  class="columns columns-{{ cols }}{%- if include.mobile2 -%}{{
+    ' columns-m2'
+  }}{%- endif -%}{%- if include.noSpace -%}{{
+    ' columns-no-space'
+  }}{%- endif -%}"
+>
+  <div class="col">
+    {{ include.col1 | markdownify }}
+  </div>
+  {%- if include.col2 -%}
+  <div class="col">
+    {{ include.col2 | markdownify }}
+  </div>
+  {%- endif -%} {%- if include.col3 -%}
+  <div class="col">
+    {{ include.col3 | markdownify }}
+  </div>
+  {%- endif -%} {%- if include.col4 -%}
+  <div class="col">
+    {{ include.col4 | markdownify }}
+  </div>
+  {%- endif -%}
+</div>

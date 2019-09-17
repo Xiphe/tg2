@@ -4,18 +4,9 @@
   ul {
     list-style: none;
     margin: 0;
-
-    &::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
   }
 
   li {
-    float: left;
-    display: block;
-    width: 50%;
     height: 50vw;
   }
 
@@ -96,7 +87,6 @@
 
   @media (min-width: $tablet) {
     li {
-      width: 25%;
       height: 25vw;
     }
 

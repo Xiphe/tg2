@@ -9,26 +9,32 @@ body {
   &.teal {
     --accent-color: #{$teal};
     --accent-color-darked: #{darken($teal, 10%)};
+    --secondary-color: #{$teal};
+    --secondary-color-darked: #{darken($teal, 10%)};
   }
   &.green {
     --accent-color: #{$green};
     --accent-color-darked: #{darken($green, 10%)};
+    --secondary-color: #{$green};
+    --secondary-color-darked: #{darken($green, 10%)};
   }
   &.red {
     --accent-color: #{$red};
     --accent-color-darked: #{darken($red, 10%)};
+    --secondary-color: #{$red};
+    --secondary-color-darked: #{darken($red, 10%)};
   }
   &.orange {
     --accent-color: #{$orange};
     --accent-color-darked: #{darken($orange, 10%)};
+    --secondary-color: #{$orange};
+    --secondary-color-darked: #{darken($orange, 10%)};
   }
   &.yellow {
     --accent-color: #{$yellow};
     --accent-color-darked: #{darken($yellow, 10%)};
-  }
-  &.gray {
-    --accent-color: #{$warmGray};
-    --accent-color-darked: #{darken($warmGray, 10%)};
+    --secondary-color: #{$yellow};
+    --secondary-color-darked: #{darken($yellow, 10%)};
   }
 }
 
@@ -99,8 +105,8 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: $blue;
-    background-color: var(--accent-color, $blue);
+    background-color: $defaultSecondaryColor;
+    background-color: var(--secondary-color, $defaultSecondaryColor);
   }
 }
 
@@ -116,20 +122,20 @@ table th {
 
 a {
   font-weight: $fontBold;
-  color: $blue;
-  color: var(--accent-color, $blue);
+  color: $defaultAccentColor;
+  color: var(--accent-color, $defaultAccentColor);
   &:hover,
   &:active,
   &:focus {
     color: black;
   }
   &:visited {
-    color: var(--accent-color-darked, darken($blue, 10%));
+    color: var(--accent-color-darked, darken($defaultAccentColor, 10%));
   }
 }
 
 hr {
   opacity: 0.8;
-  border: 0.1em solid var(--accent-color, $blue);
+  border: 0.1em solid var(--accent-color, $defaultAccentColor);
   margin: 1rem;
 }

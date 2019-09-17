@@ -9,6 +9,15 @@ Paragraphs are separated by a blank line.
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
 
+{% capture expert_content %}
+
+### Was ich für Sie tun kann?
+
+Zuverlässiges und aktuelles Know-how rund um Amerikanische Chiropraktik und Nutrition Concepts zeichnen mich aus. Hier bin ich Experte. In meiner Praxis biete ich seit 1991 Amerikanische Chiropraktik und Nutrition Concepts an, denn Nervensystem und Verdauung hängen unmittelbar voneinander ab. Funktioniert beides im Einklang miteinander, können wir rundherum gesund sein.
+
+{% endcapture %}
+{%- include expert_box.html content=expert_content -%}
+
 - this one
 - that one
 - the other one
@@ -26,7 +35,49 @@ Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
+there are also buttons
+
+{% include button.html cta="Click me" href="#" %}
+
 ## An h2 header
+
+Here are some columns:
+
+{% capture colexample1_col1 %}
+
+#### Column Headline
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+{% endcapture %}
+{% capture colexample1_col2 %}
+
+#### Column Headline
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+{% endcapture %}
+{% include columns.html mobile2=true col1=colexample1_col1 col2=colexample1_col2 %}
+
+Three Columns:  
+
+{% include columns.html col1=colexample1_col1 col2=colexample1_col2 col3=colexample1_col2 %}
+
+Four Columns:
+
+{% include columns.html mobile2=true col1=colexample1_col1 col2=colexample1_col2 col3=colexample1_col2 col4=colexample1_col2 %}
+
+Columns can also contain tiles
+
+{% capture tile_cols_1 %}
+{% include tile.html
+  image="assets/images/banner.jpg"
+  title="Amerik. Chiropraktik"
+  href="./amerikanische-chiropraktik"
+  text="Das bewährte Behandlungskonzept basiert auf einem der zentralsten Organe: dem Nervensystem."
+%}
+{% endcapture %}
+{% include columns.html noSpace=true col1=tile_cols_1 col2=tile_cols_1 %}
 
 Here's a numbered list:
 

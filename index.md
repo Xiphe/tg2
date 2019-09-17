@@ -12,5 +12,3 @@ Zuverlässiges und aktuelles Know-how rund um Amerikanische Chiropraktik und Nut
 
 {% endcapture %}
 {%- include expert_box.html content=expert_content -%}
-
-##
