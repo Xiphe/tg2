@@ -79,6 +79,11 @@ Columns can also contain tiles
 {% endcapture %}
 {% include columns.html noSpace=true col1=tile_cols_1 col2=tile_cols_1 %}
 
+
+Here are text columns
+
+{% capture text_cols_content %}
+
 Here's a numbered list:
 
 1.  first item
@@ -94,15 +99,6 @@ from the left side). Here's a code sample:
 As you probably guessed, indented 4 spaces. By the way, instead of
 indenting the block, you can use delimited blocks, if you like:
 
-```
-define foobar() {
-    print "Welcome to flavor country!";
-}
-```
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
 ```python
 import time
 # Quick, count to ten!
@@ -111,6 +107,12 @@ for i in range(10):
     time.sleep(0.5)
     print(i)
 ```
+
+(which makes copying & pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:
+
+{% endcapture %}
+{% include text_columns.html content=text_cols_content %}
 
 ### An h3 header
 

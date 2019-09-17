@@ -103,7 +103,7 @@
     }
   }
 
-  @media (min-width: $bigScreen) {
+  @media (min-width: #{$bigScreen + $scrollBar }) {
     overflow: hidden;
     border-radius: $borderRadius;
     .col {

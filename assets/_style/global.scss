@@ -104,9 +104,9 @@ h6 {
   &::after {
     content: '';
     height: 0.2em;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -0.1em;
     left: 0;
     right: 0;
     background-color: $defaultSecondaryColor;
@@ -144,12 +144,19 @@ hr {
   margin: 1rem;
 }
 
-.wrapper {
+main.page-content {
   max-width: $bigTablet;
   background: $warmWhite;
-  padding: 2em;
+  padding: 0;
+  margin: 2rem auto;
 
-  @media (min-width: $bigTablet) {
+  @media (min-width: #{$bigTablet + $scrollBar}) {
     border-radius: $borderRadius;
   }
+}
+
+.wrapper {
+  width: auto;
+  max-width: calc(#{$bigTablet} - 6rem);
+  padding: 2rem 3rem;
 }

@@ -1,0 +1,6 @@
+.text-columns {
+  @media (min-width: #{$bigTablet + $scrollBar}) {
+    columns: 2;
+    column-gap: 3em;
+  }
+}

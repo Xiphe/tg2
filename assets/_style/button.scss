@@ -22,6 +22,10 @@
     height: 42px;
   }
 
+  &:visited {
+    color: $warmWhite;
+  }
+
   &:focus,
   &:hover {
     color: $warmWhite;

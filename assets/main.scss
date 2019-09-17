@@ -4,4 +4,13 @@
 $base-font-size: 1rem;
 
 @import 'minima';
-@import 'index';
+@import 'fonts';
+@import 'global';
+@import 'header';
+@import 'main_nav';
+@import 'expert_box';
+@import 'columns';
+@import 'tile';
+@import 'button';
+@import 'footer';
+@import 'text_columns';
