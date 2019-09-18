@@ -1,6 +1,6 @@
 ---
 layout: default
-color: teal
+color: red
 ---
 
 {%- capture expert_content -%}
@@ -41,4 +41,6 @@ Besuchen Sie meinen Workshop „Was kann Amerikanische Chiropraktik für mich tu
 
 Symptome wie Übelkeit, Erschöpfung, Schlafmangel uvm. sind in der Schwangerschaft keine Seltenheit.
 
-Die Zusammenhänge zwischen unserer Ernährung und unserem gesamten körperlichen Wohlbefinden sind vielfältig. Besuchen Sie meinen Workshop „Nutrition Concepts“ und und erfahren Sie mit welch grundsätzlich einfachen Methoden sich dieses Wohlbefinden Schritt für Schritt wieder herstellen lässt. >> Zum Workshop anmelden
+Die Zusammenhänge zwischen unserer Ernährung und unserem gesamten körperlichen Wohlbefinden sind vielfältig. Besuchen Sie meinen Workshop „Nutrition Concepts“ und und erfahren Sie mit welch grundsätzlich einfachen Methoden sich dieses Wohlbefinden Schritt für Schritt wieder herstellen lässt.
+
+{% include button.html cta="Zum Workshop anmelden" href="#" %}

@@ -32,4 +32,6 @@ Vor dem ersten chiropraktischen Termin steht in der Regel der Besuch des Worksho
 
 Für die Behandlung von Kindern und Säuglingen eignet sich aufgrund des geringen Kraftaufwands die **Chiropraktik-Instrument Technik** (CIT), in Amerika als Activator Method bekannt, sehr gut. Mit dieser sanften Methode lassen sich unter Zuhilfenahme chiropraktischer Instrumente Subluxationen beseitigen. CIT gehört zu den ältesten und meist angewandten Techniken der Amerikanischen Chiropraktik.
 
-Besuchen Sie meinen Workshop „Was kann Amerikanische Chiropraktik für mich tun?“ und überzeugen Sie sich davon, dass Amerikanische Chiropraktik auch Ihrem Kind helfen kann. Ich freue mich auf Sie >> Zum Workshop anmelden
+Besuchen Sie meinen Workshop „Was kann Amerikanische Chiropraktik für mich tun?“ und überzeugen Sie sich davon, dass Amerikanische Chiropraktik auch Ihrem Kind helfen kann. Ich freue mich auf Sie!
+
+{% include button.html cta="Zum Workshop anmelden" href="#" %}

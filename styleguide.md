@@ -74,7 +74,8 @@ Columns can also contain tiles
   image="assets/images/banner.jpg"
   title="Amerik. Chiropraktik"
   href="./amerikanische-chiropraktik"
-  text="Das bewährte Behandlungskonzept basiert auf einem der zentralsten Organe: dem Nervensystem."
+  text="„Ziel der Amerikanischen Chiropraktik ist es, diese Blockaden zu lösen und auf diese Weise die Selbstheilungskräfte des Menschen zu aktivieren.“
+Denn nur ein Körper, in dem Nervenimpulse ungehindert fließen können, ist ein gesunder Körper."
 %}
 {% endcapture %}
 {% include columns.html noSpace=true col1=tile_cols_1 col2=tile_cols_1 %}
