@@ -1,12 +1,16 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="text-columns"></div>
+    <p>Achtung: Diese Seite wird zur Zeit vor Suchmaschienen versteckt.</p>
 
     <nav>
       <ul>
-        <li><a href="/datenschutz">Datenschutz</a></li>
-        <li><a href="/impressum">Impressum und Haftungsausschluss</a></li>
-        <li><a href="/styleguide">Styleguide</a></li>
+        <li><a href="{{ '/datenschutz' | relative_url }}">Datenschutz</a></li>
+        <li>
+          <a href="{{ '/impressum' | relative_url }}"
+            >Impressum und Haftungsausschluss</a
+          >
+        </li>
+        <li><a href="{{ '/styleguide' | relative_url }}">Styleguide</a></li>
       </ul>
     </nav>
   </div>

@@ -1,7 +1,7 @@
 <div class="tile">
   <div
     class="tile-image"
-    style="background-image: url('{{ include.image }}')"
+    style="background-image: url('{{ include.image | relative_url }}')"
   ></div>
   <div class="tile-content">
     <h3>{{ include.title }}</h3>

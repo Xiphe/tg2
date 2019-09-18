@@ -39,7 +39,7 @@ E-Mail: [info@institut-grossmann.com](mailto:info@institut-grossmann.com)
 
 {% capture tile_cols_1 %}
 {% include tile.html
-  image="assets/images/banner.jpg"
+  image="/assets/images/banner.jpg"
   title="Amerik. Chiropraktik"
   href="./amerikanische-chiropraktik"
   text="„Ziel der Amerikanischen Chiropraktik ist es, diese Blockaden zu lösen und auf diese Weise die Selbstheilungskräfte des Menschen zu aktivieren.“"

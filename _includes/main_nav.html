@@ -1,16 +1,18 @@
 <nav class="main_nav">
   <ul class="columns columns-4 columns-no-space columns-m2">
     <li class="col babies">
-      <a href="/babies"><span>Babies</span></a>
+      <a href="{{ '/babies' | relative_url }}"><span>Babies</span></a>
     </li>
     <li class="col schwangere">
-      <a href="/schwangere"><span>Schwangere</span></a>
+      <a href="{{ '/schwangere' | relative_url }}"><span>Schwangere</span></a>
     </li>
     <li class="col berufstaetige">
-      <a href="/berufstaetige"><span>Berufstätige</span></a>
+      <a href="{{ '/berufstaetige' | relative_url }}"
+        ><span>Berufstätige</span></a
+      >
     </li>
     <li class="col fiftyplus">
-      <a href="/50plus"><span>50 Plus</span></a>
+      <a href="{{ '/50plus' | relative_url }}"><span>50 Plus</span></a>
     </li>
   </ul>
 </nav>

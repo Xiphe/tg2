@@ -48,7 +48,7 @@
 
   .babies {
     a {
-      background-image: url('/assets/images/babies.jpg');
+      background-image: url('./images/babies.jpg');
       background-color: $teal;
     }
 
@@ -59,7 +59,7 @@
 
   .schwangere {
     a {
-      background-image: url('/assets/images/schwangere.jpg');
+      background-image: url('./images/schwangere.jpg');
       background-color: rgba($red, 0.9);
     }
 
@@ -70,7 +70,7 @@
 
   .berufstaetige {
     a {
-      background-image: url('/assets/images/berufstaetige.jpg');
+      background-image: url('./images/berufstaetige.jpg');
       background-color: rgba($green, 0.8);
     }
 
@@ -81,7 +81,7 @@
 
   .fiftyplus {
     a {
-      background-image: url('/assets/images/50plus.jpg');
+      background-image: url('./images/50plus.jpg');
       background-color: rgba($orange, 0.8);
     }
 

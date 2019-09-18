@@ -2,7 +2,9 @@
   <div class="site-header-wrap">
     <div class="site_title_wrap">
       {%- unless page.home -%}
-      <a href="/" class="back"><span aria-hidden="true">&lt;</span> Zurück</a>
+      <a href="{{ '/ ' | relative_url }}" class="back"
+        ><span aria-hidden="true">&lt;</span> Zurück</a
+      >
       {%- endunless -%} {%- if page.home -%}
       <h1 class="site_title">{{ site.title }}</h1>
       {%- else -%}
